@@ -19,7 +19,7 @@ The most common example of this is when building a full-screen modal. Ideally, w
 
 Consider the following HTML structure.
 
-```vue-html
+```html
 <div class="outer">
   <h3>Vue Teleport Example</h3>
   <div>
@@ -76,7 +76,7 @@ When using this component inside the initial HTML structure, there are a number 
 
 `<Teleport>` provides a clean way to work around these, by allowing us to break out of the nested DOM structure. Let's modify `<MyModal>` to use `<Teleport>`:
 
-```vue-html{3,8}
+```html
 <button @click="open = true">Open Modal</button>
 
 <Teleport to="body">
@@ -135,7 +135,7 @@ This also means that injections from a parent component work as expected, and th
 
 In some cases, we may want to conditionally disable `<Teleport>`. For example, we may want to render a component as an overlay for desktop, but inline on mobile. `<Teleport>` supports the `disabled` prop which can be dynamically toggled:
 
-```vue-html
+```html
 <Teleport :disabled="isMobile">
   ...
 </Teleport>
@@ -149,7 +149,7 @@ A common use case would be a reusable `<Modal>` component, with the potential fo
 
 Given the following usage:
 
-```vue-html
+```html
 <Teleport to="#modals">
   <div>A</div>
 </Teleport>
@@ -171,7 +171,7 @@ The rendered result would be:
 
 In Vue 3.5 and above, we can use the `defer` prop to defer the target resolving of a Teleport until other parts of the application have mounted. This allows the Teleport to target a container element that is rendered by Vue, but in a later part of the component tree:
 
-```vue-html
+```html
 <Teleport defer to="#late-div">...</Teleport>
 
 <!-- somewhere later in the template -->

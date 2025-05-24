@@ -77,7 +77,7 @@ When an element in a `<Transition>` component is inserted or removed, this is wh
 
 There are six classes applied for enter / leave transitions.
 
-![Transition Diagram](./images/transition-classes.png)
+![Transition Diagram](../../../assets/images/transition-classes.png) 
 
 <!-- https://www.figma.com/file/rlOv0ZKJFFNA9hYmzdZv3S/Transition-Classes -->
 

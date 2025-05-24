@@ -43,7 +43,7 @@ At the high level, this is what happens when a Vue component is mounted:
 
 3. **Patch**: When a dependency used during mount changes, the effect re-runs. This time, a new, updated Virtual DOM tree is created. The runtime renderer walks the new tree, compares it with the old one, and applies necessary updates to the actual DOM.
 
-![render pipeline](./images/render-pipeline.png)
+![render pipeline](../../../assets/images/render-pipeline.png)
 
 <!-- https://www.figma.com/file/elViLsnxGJ9lsQVsuhwqxM/Rendering-Mechanism -->
 

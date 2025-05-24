@@ -4,7 +4,7 @@ title: Creating a Vue Application
 
 ## The application instance 
 
-Every Vue application starts by creating a new **application instance** with the [`createApp`](/api/application#createapp) function:
+Every Vue application starts by creating a new **application instance** with the `createApp` function:
 
 ```js
 import { createApp } from 'vue'
@@ -85,7 +85,7 @@ app.mount('#app')
 
 Vue will automatically use the container's `innerHTML` as the template if the root component does not already have a `template` option.
 
-In-DOM templates are often used in applications that are [using Vue without a build step](/guide/quick-start.html#using-vue-from-cdn). They can also be used in conjunction with server-side frameworks, where the root template might be generated dynamically by the server.
+In-DOM templates are often used in applications that are using Vue without a build step. They can also be used in conjunction with server-side frameworks, where the root template might be generated dynamically by the server.
 
 ## App Configurations 
 

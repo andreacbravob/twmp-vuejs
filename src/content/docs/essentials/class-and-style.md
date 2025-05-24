@@ -196,7 +196,9 @@ However, this can be a bit verbose if you have multiple conditional classes. Tha
 
 ### With Components 
 
-> This section assumes knowledge of [Components](/guide/essentials/component-basics). Feel free to skip it and come back later.
+:::note 
+This section assumes knowledge of [Components](https://vuejs.org/guide/essentials/component-basics.html). Feel free to skip it and come back later.
+:::
 
 When you use the `class` attribute on a component with a single root element, those classes will be added to the component's root element and merged with any existing class already on it.
 

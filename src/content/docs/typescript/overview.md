@@ -27,7 +27,7 @@ With a Vite-based setup, the dev server and the bundler are transpilation-only a
 
   - [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) is the official VS Code extension that provides TypeScript support inside Vue SFCs, along with many other great features.
 
-    :::tip
+    :::note
     Vue - Official extension replaces [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur), our previous official VS Code extension for Vue 2. If you have Vetur currently installed, make sure to disable it in Vue 3 projects.
     :::
 
@@ -185,7 +185,7 @@ let x: string | number = 1
 </template>
 ```
 
-:::tip
+:::note
 If using Vue CLI or a webpack-based setup, TypeScript in template expressions requires `vue-loader@^16.8.0`.
 :::
 

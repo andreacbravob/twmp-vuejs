@@ -93,7 +93,7 @@ Now, our initial expression `$translate('greetings.hello')` will be replaced by 
 
 See also: [Augmenting Global Properties](/guide/typescript/options-api#augmenting-global-properties) <sup class="vt-badge ts" />
 
-:::tip
+:::note
 Use global properties scarcely, since it can quickly become confusing if too many global properties injected by different plugins are used throughout an app.
 :::
 
@@ -101,7 +101,7 @@ Use global properties scarcely, since it can quickly become confusing if too man
 
 Plugins also allow us to use `provide` to give plugin users access to a function or attribute. For example, we can allow the application to have access to the `options` parameter to be able to use the translations object.
 
-```js{10}
+```js
 // plugins/i18n.js
 export default {
   install: (app, options) => {

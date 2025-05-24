@@ -2,7 +2,9 @@
 title: TypeScript with Composition API
 ---
 
-> This page assumes you've already read the overview on [Using Vue with TypeScript](./overview).
+:::note
+This page assumes you've already read the overview on [Using Vue with TypeScript](./overview).
+:::
 
 ## Typing Component Props 
 
@@ -281,7 +283,7 @@ interface Book {
 const book: Book = reactive({ title: 'Vue 3 Guide' })
 ```
 
-:::tip
+:::note
 It's not recommended to use the generic argument of `reactive()` because the returned type, which handles nested ref unwrapping, is different from the generic argument type.
 :::
 

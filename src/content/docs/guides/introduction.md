@@ -15,9 +15,6 @@ footer: false
       <img class="banner" alt="Vue Mastery banner" width="96px" height="56px" src="https://storage.googleapis.com/vue-mastery.appspot.com/flamelink/media/vuemastery-graphical-link-96x56.png" />
     </div>
     <p class="description">Learn Vue with video tutorials on <span>VueMastery.com</span></p>
-    <!--<div class="logo-wrapper">
-        <img alt="Vue Mastery Logo" width="25px" src="https://storage.googleapis.com/vue-mastery.appspot.com/flamelink/media/vue-mastery-logo.png" />
-    </div>-->
   </a>
 </div>
 
@@ -87,7 +84,7 @@ The above example demonstrates the two core features of Vue:
 
 You may already have questions - don't worry. We will cover every little detail in the rest of the documentation. For now, please read along so you can have a high-level understanding of what Vue offers.
 
-:::tip[Prerequisites]
+:::note[Prerequisites]
 The rest of the documentation assumes basic familiarity with HTML, CSS, and JavaScript. If you are totally new to frontend development, it might not be the best idea to jump right into a framework as your first step - grasp the basics and then come back! You can check your knowledge level with these overviews for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps) if needed. Prior experience with other frameworks helps, but is not required.
 :::
 
@@ -104,7 +101,7 @@ Vue is a framework and ecosystem that covers most of the common features needed 
 
 If you find these concepts intimidating, don't worry! The tutorial and guide only require basic HTML and JavaScript knowledge, and you should be able to follow along without being an expert in any of these.
 
-If you are an experienced developer interested in how to best integrate Vue into your stack, or you are curious about what these terms mean, we discuss them in more detail in [Ways of Using Vue](/guide/extras/ways-of-using-vue).
+If you are an experienced developer interested in how to best integrate Vue into your stack, or you are curious about what these terms mean, we discuss them in more detail in [Ways of Using Vue](../../extras/ways-of-using-vue).
 
 Despite the flexibility, the core knowledge about how Vue works is shared across all these use cases. Even if you are just a beginner now, the knowledge gained along the way will stay useful as you grow to tackle more ambitious goals in the future. If you are a veteran, you can pick the optimal way to leverage Vue based on the problems you are trying to solve, while retaining the same productivity. This is why we call Vue "The Progressive Framework": it's a framework that can grow with you and adapt to your needs.
 
@@ -158,7 +155,7 @@ button {
 
 </div>
 
-SFC is a defining feature of Vue and is the recommended way to author Vue components **if** your use case warrants a build setup. You can learn more about the [how and why of SFC](/guide/scaling-up/sfc) in its dedicated section - but for now, just know that Vue will handle all the build tools setup for you.
+SFC is a defining feature of Vue and is the recommended way to author Vue components **if** your use case warrants a build setup. You can learn more about the [how and why of SFC](../../scaling-up/sfc) in its dedicated section - but for now, just know that Vue will handle all the build tools setup for you.
 
 ## API Styles 
 
@@ -205,7 +202,7 @@ export default {
 
 ### Composition API 
 
-With Composition API, we define a component's logic using imported API functions. In SFCs, Composition API is typically used with [`<script setup>`](/api/sfc-script-setup). The `setup` attribute is a hint that makes Vue perform compile-time transforms that allow us to use Composition API with less boilerplate. For example, imports and top-level variables / functions declared in `<script setup>` are directly usable in the template.
+With Composition API, we define a component's logic using imported API functions. In SFCs, Composition API is typically used with [`<script setup>`](https://vuejs.org/api/sfc-script-setup.html). The `setup` attribute is a hint that makes Vue perform compile-time transforms that allow us to use Composition API with less boilerplate. For example, imports and top-level variables / functions declared in `<script setup>` are directly usable in the template.
 
 Here is the same component, with the exact same template, but using Composition API and `<script setup>` instead:
 
@@ -242,7 +239,7 @@ The Options API is centered around the concept of a "component instance" (`this`
 
 The Composition API is centered around declaring reactive state variables directly in a function scope and composing state from multiple functions together to handle complexity. It is more free-form and requires an understanding of how reactivity works in Vue to be used effectively. In return, its flexibility enables more powerful patterns for organizing and reusing logic.
 
-You can learn more about the comparison between the two styles and the potential benefits of Composition API in the [Composition API FAQ](/guide/extras/composition-api-faq).
+You can learn more about the comparison between the two styles and the potential benefits of Composition API in the [Composition API FAQ](../../extras/composition-api-faq).
 
 If you are new to Vue, here's our general recommendation:
 
@@ -256,24 +253,24 @@ If you are new to Vue, here's our general recommendation:
 
 You don't have to commit to only one style during the learning phase. The rest of the documentation will provide code samples in both styles where applicable, and you can toggle between them at any time using the **API Preference switches** at the top of the left sidebar.
 
-## Still Got Questions? 
+## Do you have questions? 
 
-Check out our [FAQ](/about/faq).
+Check out our [FAQ](https://vuejs.org/about/faq.html).
 
 ## Pick Your Learning Path 
 
 Different developers have different learning styles. Feel free to pick a learning path that suits your preference - although we do recommend going over all of the content, if possible!
 
 <div class="vt-box-container next-steps">
-  <a class="vt-box" href="/tutorial/">
+  <a class="vt-box" href="https://vuejs.org/tutorial/#step-1">
     <p class="next-steps-link">Try the Tutorial</p>
     <p class="next-steps-caption">For those who prefer learning things hands-on.</p>
   </a>
-  <a class="vt-box" href="/guide/quick-start.html">
+  <a class="vt-box" href="/guides/quick-start.html">
     <p class="next-steps-link">Read the Guide</p>
     <p class="next-steps-caption">The guide walks you through every aspect of the framework in full detail.</p>
   </a>
-  <a class="vt-box" href="/examples/">
+  <a class="vt-box" href="https://vuejs.org/examples/#hello-world">
     <p class="next-steps-link">Check out the Examples</p>
     <p class="next-steps-caption">Explore examples of core features and common UI tasks.</p>
   </a>

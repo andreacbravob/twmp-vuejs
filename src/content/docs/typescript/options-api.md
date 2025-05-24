@@ -2,9 +2,11 @@
 title: TypeScript with Options API 
 ---
 
-> This page assumes you've already read the overview on [Using Vue with TypeScript](./overview).
+:::note
+This page assumes you've already read the overview on [Using Vue with TypeScript](./overview).
+:::
 
-:::tip
+:::caution[API Recommendation]
 While Vue does support TypeScript usage with Options API, it is recommended to use Vue with TypeScript via Composition API as it offers simpler, more efficient and more robust type inference.
 :::
 

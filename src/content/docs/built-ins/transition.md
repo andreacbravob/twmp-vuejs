@@ -2,7 +2,7 @@
 title: Transition
 ---
 
-<script setup>
+<!--<script setup>
 import Basic from './transition-demos/Basic.vue'
 import SlideFade from './transition-demos/SlideFade.vue'
 import CssAnimation from './transition-demos/CssAnimation.vue'
@@ -10,7 +10,7 @@ import NestedTransitions from './transition-demos/NestedTransitions.vue'
 import JsHooks from './transition-demos/JsHooks.vue'
 import BetweenElements from './transition-demos/BetweenElements.vue'
 import BetweenComponents from './transition-demos/BetweenComponents.vue'
-</script>
+</script>-->
 
 Vue offers two built-in components that can help work with transitions and animations in response to changing state:
 
@@ -59,7 +59,7 @@ This is an example of the most basic usage:
 
 </div>
 
-:::tip
+:::note
 `<Transition>` only supports a single element or component as its slot content. If the content is a component, the component must also have only one single root element.
 :::
 

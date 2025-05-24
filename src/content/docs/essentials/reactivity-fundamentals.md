@@ -3,8 +3,8 @@ title: Reactivity Fundamentals
 outline: deep
 ---
 
-:::tip[API Preference]
-This page and many other chapters later in the guide contain different content for the Options API and the Composition API. Your current preference is <span class="options-api">Options API</span><span class="composition-api">Composition API</span>. You can toggle between the API styles using the "API Preference" switches at the top of the left sidebar.
+:::note[API Preference]
+This page and many other chapters later in the guide contain different content for the Options API and the Composition API. Your current preference is <span class="options-api">Options API</span>. You can toggle between the API styles using the "API Preference" switches at the top of the left sidebar.
 :::
 
 <div class="options-api">
@@ -183,7 +183,7 @@ function increment() {
 
 Top-level imports, variables and functions declared in `<script setup>` are automatically usable in the template of the same component. Think of the template as a JavaScript function declared in the same scope - it naturally has access to everything declared alongside it.
 
-:::tip
+:::note
 For the rest of the guide, we will be primarily using SFC + `<script setup>` syntax for the Composition API code examples, as that is the most common usage for Vue developers.
 
 If you are not using SFC, you can still use Composition API with the [`setup()`](/api/composition-api-setup) option.
@@ -369,7 +369,7 @@ export default {
 
 <div class="composition-api">
 
-## `reactive()`
+## reactive()
 
 There is another way to declare reactive state, with the `reactive()` API. Unlike a ref which wraps the inner value in a special object, `reactive()` makes an object itself reactive:
 
@@ -428,7 +428,7 @@ proxy.nested = raw
 console.log(proxy.nested === raw) // false
 ```
 
-### Limitations of `reactive()`
+### Limitations of reactive()
 
 The `reactive()` API has a few limitations:
 

@@ -2,7 +2,9 @@
 title: Props
 ---
 
-> This page assumes you've already read the [Components Basics](/guide/essentials/component-basics). Read that first if you are new to components.
+:::note
+This page assumes you've already read the [Components Basics](https://vuejs.org/guide/essentials/component-basics.html). Read that first if you are new to components.
+:::
 
 import { LinkCard } from '@astrojs/starlight/components';
 
@@ -336,7 +338,7 @@ When prop validation fails, Vue will produce a console warning (if using the dev
 
 <div class="options-api">
 
-::: tip Note
+:::note
 Note that props are validated **before** a component instance is created, so instance properties (e.g. `data`, `computed`, etc.) will not be available inside `default` or `validator` functions.
 :::
 

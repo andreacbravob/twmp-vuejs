@@ -16,7 +16,7 @@ import { Code } from '@astrojs/starlight/components';
 
 ## Creating a Vue Application 
 
-:::tip[Prerequisites]
+:::note[Prerequisites]
 - Familiarity with the command line
 - Install [Node.js](https://nodejs.org/) version 18.3 or higher
   :::
@@ -153,7 +153,7 @@ The above link loads the _global build_ of Vue, where all top-level APIs are exp
 
 [CodePen Demo >](https://codepen.io/vuejs-examples/pen/eYQpQEG)
 
-:::tip
+:::note
 Many of the examples for Composition API throughout the guide will be using the `<script setup>` syntax, which requires build tools. If you intend to use Composition API without a build step, consult the usage of the [`setup()` option](/api/composition-api-setup).
 :::
 
@@ -263,7 +263,7 @@ We can teach the browser where to locate the `vue` import by using [Import Maps]
 
 You can also add entries for other dependencies to the import map - but make sure they point to the ES modules version of the library you intend to use.
 
-:::tip[Import Maps Browser Support]
+:::note[Import Maps Browser Support]
 Import Maps is a relatively new browser feature. Make sure to use a browser within its [support range](https://caniuse.com/import-maps). In particular, it is only supported in Safari 16.4+.
 :::
 

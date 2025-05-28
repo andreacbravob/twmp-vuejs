@@ -263,7 +263,9 @@ Now when you run `fullName.value = 'John Doe'`, the setter will be invoked and `
 
 ## Getting the Previous Value 
 
-- Only supported in 3.4+
+:::note[Support]
+Only supported in 3.4+
+:::
 
 In case you need it, you can get the previous value returned by the computed property accessing
 the first argument of the getter:

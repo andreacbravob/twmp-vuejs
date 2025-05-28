@@ -11,31 +11,29 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Getting Started',
-					autogenerate: { directory: 'guides' },
+					items: [
+						{ label: 'Introduction', link: '/guides/introduction' },
+						{ label: 'Quick Start', link: '/guides/quick-start' },
+						{ label: 'Ways of Using Vue', link: '/extras/ways-of-using-vue' },
+      				],
 				},
 				{
-					label: 'Essentials',
+					label: 'Installation and setup',
 					items: [
 						{ label: 'Create an Application', link: '/essentials/application' },
+						{ label: 'TypeScript', link: '/typescript/overview' },
+						{ label: 'TypeScript with Composition API', link: '/typescript/composition-api' },
+						{ label: 'TypeScript with Options API', link: '/typescript/options-api' },
+      				],
+				},
+				{
+					label: 'Core Concepts',
+					items: [
 						{ label: 'Reactivity Fundamentals', link: '/essentials/reactivity-fundamentals' },
 						{ label: 'Computed Properties', link: '/essentials/computed' },
 						{ label: 'Class and Style Bindings', link: '/essentials/class-and-style' },
 						{ label: 'Template Refs', link: '/essentials/template-refs'},
       				],
-				},
-				{
-					label: 'Components In-Depth',
-					items: [
-						{ label: 'Registration', link: '/components/registration' },
-						{ label: 'Props', link: '/components/props' },
-						{ label: 'Events', link: '/components/events' },
-						{ label: 'Fallthrough Attributes', link: '/components/attrs' },						
-						{ label: 'Async Components', link: '/components/async' },
-      				],
-				},
-				{
-					label: 'Reusability',
-					autogenerate: { directory: 'reusability' },
 				},
 				{
 					label: 'Built-in Components',
@@ -51,37 +49,41 @@ export default defineConfig({
 					label: 'Scaling Up',
 					items: [
 						{ label: 'Single-File Components', link: '/scaling-up/sfc' },
-						{ label: 'Tooling', link: '/scaling-up/tooling' },
 						{ label: 'Routing', link: '/scaling-up/routing' },
-						{ label: 'State Management', link: '/scaling-up/state-management' },
-						{ label: 'Testing', link: '/scaling-up/testing' },						
+						{ label: 'State Management', link: '/scaling-up/state-management' },					
+      				],
+				},
+				{
+					label: 'Advanced Topics',
+					items: [
+						{ label: 'Registration', link: '/components/registration' },
+						{ label: 'Props', link: '/components/props' },
+						{ label: 'Events', link: '/components/events' },
+						{ label: 'Fallthrough Attributes', link: '/components/attrs' },						
+						{ label: 'Async Components', link: '/components/async' },
+						{ label: 'Composables', link: '/reusability/composables' },
+						{ label: 'Custom Directives', link: '/reusability/custom-directives' },
+						{ label: 'Plugins', link: '/reusability/plugins' },
+						{ label: 'Reactivity in Depth', link: '/extras/reactivity-in-depth' },
+						{ label: 'Rendering Mechanism', link: '/extras/rendering-mechanism' },
+						{ label: 'Vue and Web Components', link: '/extras/web-components' },
       				],
 				},
 				{
 					label: 'Best Practices',
 					items: [
+						{ label: 'Testing', link: '/scaling-up/testing' },	
 						{ label: 'Production Deployment', link: '/best-practices/production-deployment' },
 						{ label: 'Performance', link: '/best-practices/performance' },
 						{ label: 'Accessibility', link: '/best-practices/accessibility' },
-						{ label: 'Security', link: '/best-practices/security' },					
+						{ label: 'Security', link: '/best-practices/security' },
+						{ label: 'Tooling', link: '/scaling-up/tooling' },					
       				],
 				},
 				{
-					label: 'TypeScript',
+					label: 'Troubleshooting & FAQs',
 					items: [
-						{ label: 'Overview', link: '/typescript/overview' },
-						{ label: 'TS with Composition API', link: '/typescript/composition-api' },
-						{ label: 'TS with Options API', link: '/typescript/options-api' },				
-      				],
-				},
-				{
-					label: 'Extra Topics',
-					items: [
-						{ label: 'Ways of Using Vue', link: '/extras/ways-of-using-vue' },
-						{ label: 'Composition API FAQ', link: '/extras/composition-api-faq' },
-						{ label: 'Reactivity in Depth', link: '/extras/reactivity-in-depth' },
-						{ label: 'Rendering Mechanism', link: '/extras/rendering-mechanism' },
-						{ label: 'Vue and Web Components', link: '/extras/web-components' },						
+						{ label: 'Composition API FAQ', link: '/extras/composition-api-faq' },						
       				],
 				},
 			],

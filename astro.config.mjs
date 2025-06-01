@@ -21,9 +21,6 @@ export default defineConfig({
 					label: 'Installation and setup',
 					items: [
 						{ label: 'Create an Application', link: '/essentials/application' },
-						{ label: 'TypeScript', link: '/typescript/overview' },
-						{ label: 'TypeScript with Composition API', link: '/typescript/composition-api' },
-						{ label: 'TypeScript with Options API', link: '/typescript/options-api' },
       				],
 				},
 				{
@@ -67,6 +64,9 @@ export default defineConfig({
 						{ label: 'Reactivity in Depth', link: '/extras/reactivity-in-depth' },
 						{ label: 'Rendering Mechanism', link: '/extras/rendering-mechanism' },
 						{ label: 'Vue and Web Components', link: '/extras/web-components' },
+						{ label: 'TypeScript', link: '/typescript/overview' },
+						{ label: 'TypeScript with Composition API', link: '/typescript/composition-api' },
+						{ label: 'TypeScript with Options API', link: '/typescript/options-api' },
       				],
 				},
 				{

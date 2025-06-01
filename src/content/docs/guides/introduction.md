@@ -8,23 +8,14 @@ footer: false
 - Upgrading from Vue 2? Check out the [Migration Guide](https://v3-migration.vuejs.org/).
   :::
 
-<style>.vue-mastery-link a{display:flex;gap:1rem}</style>
-<div class="vue-mastery-link">
-  <a href="https://www.vuemastery.com/courses/" target="_blank">
-    <div class="banner-wrapper">
-      <img class="banner" alt="Vue Mastery banner" width="96px" height="56px" src="https://storage.googleapis.com/vue-mastery.appspot.com/flamelink/media/vuemastery-graphical-link-96x56.png" />
-    </div>
-    <p class="description">Learn Vue with video tutorials on <span>VueMastery.com</span></p>
-  </a>
-</div>
+
+Welcome to the Vue documentation! Whether you're adding interactivity to a single page or building a full-featured application, Vue is designed to be flexible, approachable, and fast. This guide will walk you through the core concepts to help you start building with Vue.
 
 ## What is Vue? 
 
 Vue (pronounced /vjuː/, like **view**) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative, component-based programming model that helps you efficiently develop user interfaces of any complexity.
 
 Here is a minimal example:
-
-<div class="options-api">
 
 ```js
 import { createApp } from 'vue'
@@ -37,23 +28,6 @@ createApp({
   }
 }).mount('#app')
 ```
-
-</div>
-<div class="composition-api">
-
-```js
-import { createApp, ref } from 'vue'
-
-createApp({
-  setup() {
-    return {
-      count: ref(0)
-    }
-  }
-}).mount('#app')
-```
-
-</div>
 
 ```vue-html
 <div id="app">
@@ -87,75 +61,6 @@ You may already have questions - don't worry. We will cover every little detail 
 :::note[Prerequisites]
 The rest of the documentation assumes basic familiarity with HTML, CSS, and JavaScript. If you are totally new to frontend development, it might not be the best idea to jump right into a framework as your first step - grasp the basics and then come back! You can check your knowledge level with these overviews for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps) if needed. Prior experience with other frameworks helps, but is not required.
 :::
-
-## The Progressive Framework 
-
-Vue is a framework and ecosystem that covers most of the common features needed in frontend development. But the web is extremely diverse - the things we build on the web may vary drastically in form and scale. With that in mind, Vue is designed to be flexible and incrementally adoptable. Depending on your use case, Vue can be used in different ways:
-
-- Enhancing static HTML without a build step
-- Embedding as Web Components on any page
-- Single-Page Application (SPA)
-- Fullstack / Server-Side Rendering (SSR)
-- Jamstack / Static Site Generation (SSG)
-- Targeting desktop, mobile, WebGL, and even the terminal
-
-If you find these concepts intimidating, don't worry! The tutorial and guide only require basic HTML and JavaScript knowledge, and you should be able to follow along without being an expert in any of these.
-
-If you are an experienced developer interested in how to best integrate Vue into your stack, or you are curious about what these terms mean, we discuss them in more detail in [Ways of Using Vue](../../extras/ways-of-using-vue).
-
-Despite the flexibility, the core knowledge about how Vue works is shared across all these use cases. Even if you are just a beginner now, the knowledge gained along the way will stay useful as you grow to tackle more ambitious goals in the future. If you are a veteran, you can pick the optimal way to leverage Vue based on the problems you are trying to solve, while retaining the same productivity. This is why we call Vue "The Progressive Framework": it's a framework that can grow with you and adapt to your needs.
-
-## Single-File Components 
-
-In most build-tool-enabled Vue projects, we author Vue components using an HTML-like file format called **Single-File Component** (also known as `*.vue` files, abbreviated as **SFC**). A Vue SFC, as the name suggests, encapsulates the component's logic (JavaScript), template (HTML), and styles (CSS) in a single file. Here's the previous example, written in SFC format:
-
-<div class="options-api">
-
-```vue
-<script>
-export default {
-  data() {
-    return {
-      count: 0
-    }
-  }
-}
-</script>
-
-<template>
-  <button @click="count++">Count is: {{ count }}</button>
-</template>
-
-<style scoped>
-button {
-  font-weight: bold;
-}
-</style>
-```
-
-</div>
-<div class="composition-api">
-
-```vue
-<script setup>
-import { ref } from 'vue'
-const count = ref(0)
-</script>
-
-<template>
-  <button @click="count++">Count is: {{ count }}</button>
-</template>
-
-<style scoped>
-button {
-  font-weight: bold;
-}
-</style>
-```
-
-</div>
-
-SFC is a defining feature of Vue and is the recommended way to author Vue components **if** your use case warrants a build setup. You can learn more about the [how and why of SFC](../../scaling-up/sfc) in its dedicated section - but for now, just know that Vue will handle all the build tools setup for you.
 
 ## API Styles 
 
@@ -253,33 +158,52 @@ If you are new to Vue, here's our general recommendation:
 
 You don't have to commit to only one style during the learning phase. The rest of the documentation will provide code samples in both styles where applicable, and you can toggle between them at any time using the **API Preference switches** at the top of the left sidebar.
 
-## Do you have questions? 
+## Single-File Components 
+
+In most build-tool-enabled Vue projects, we author Vue components using an HTML-like file format called **Single-File Component** (also known as `*.vue` files, abbreviated as **SFC**). A Vue SFC, as the name suggests, encapsulates the component's logic (JavaScript), template (HTML), and styles (CSS) in a single file. Here's the previous example, written in SFC format:
+
+```vue
+<script>
+export default {
+  data() {
+    return {
+      count: 0
+    }
+  }
+}
+</script>
+
+<template>
+  <button @click="count++">Count is: {{ count }}</button>
+</template>
+
+<style scoped>
+button {
+  font-weight: bold;
+}
+</style>
+```
+
+SFC is a defining feature of Vue and is the recommended way to author Vue components **if** your use case warrants a build setup. You can learn more about the [how and why of SFC](../../scaling-up/sfc) in its dedicated section - but for now, just know that Vue will handle all the build tools setup for you.
+
+
+## The Progressive Framework 
+
+Vue is a framework and ecosystem that covers most of the common features needed in frontend development. But the web is extremely diverse - the things we build on the web may vary drastically in form and scale. With that in mind, Vue is designed to be flexible and incrementally adoptable. Depending on your use case, Vue can be used in different ways:
+
+- Enhancing static HTML without a build step
+- Embedding as Web Components on any page
+- Single-Page Application (SPA)
+- Fullstack / Server-Side Rendering (SSR)
+- Jamstack / Static Site Generation (SSG)
+- Targeting desktop, mobile, WebGL, and even the terminal
+
+If you find these concepts intimidating, don't worry! The tutorial and guide only require basic HTML and JavaScript knowledge, and you should be able to follow along without being an expert in any of these.
+
+If you are an experienced developer interested in how to best integrate Vue into your stack, or you are curious about what these terms mean, we discuss them in more detail in [Ways of Using Vue](../../extras/ways-of-using-vue).
+
+Despite the flexibility, the core knowledge about how Vue works is shared across all these use cases. Even if you are just a beginner now, the knowledge gained along the way will stay useful as you grow to tackle more ambitious goals in the future. If you are a veteran, you can pick the optimal way to leverage Vue based on the problems you are trying to solve, while retaining the same productivity. This is why we call Vue "The Progressive Framework": it's a framework that can grow with you and adapt to your needs.
+
+## Questions? 
 
 Check out our [FAQ](https://vuejs.org/about/faq.html).
-
-## Pick Your Learning Path 
-
-Different developers have different learning styles. Feel free to pick a learning path that suits your preference - although we do recommend going over all of the content, if possible!
-
-<div class="vt-box-container next-steps">
-  <a class="vt-box" href="https://vuejs.org/tutorial/#step-1">
-    <p class="next-steps-link">Try the Tutorial</p>
-    <p class="next-steps-caption">For those who prefer learning things hands-on.</p>
-  </a>
-  <a class="vt-box" href="/guides/quick-start.html">
-    <p class="next-steps-link">Read the Guide</p>
-    <p class="next-steps-caption">The guide walks you through every aspect of the framework in full detail.</p>
-  </a>
-  <a class="vt-box" href="https://vuejs.org/examples/#hello-world">
-    <p class="next-steps-link">Check out the Examples</p>
-    <p class="next-steps-caption">Explore examples of core features and common UI tasks.</p>
-  </a>
-</div>
-
-<!--import { LinkCard, CardGrid } from '@astrojs/starlight/components';
-
-<CardGrid>
-  <LinkCard title="Try the Tutorial" href="https://vuejs.org/tutorial/#step-1" description="For those who prefer learning things hands-on."/>
-  <LinkCard title="Read the Guide" href="/guide/quick-start" description="The guide walks you through every aspect of the framework in full detail."/>
-  <LinkCard title="Check out the Examples" href="https://vuejs.org/examples/#hello-world" description="Explore examples of core features and common UI tasks."/>
-</CardGrid>-->
